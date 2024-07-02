@@ -4,12 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
-
-[target.'cfg(target_os = "linux")']
-rustflags = ["-C", "link-arg=-nostartfiles"]
+bootloader = "0.9"
